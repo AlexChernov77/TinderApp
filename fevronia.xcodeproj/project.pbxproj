@@ -1,0 +1,790 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9610135A2003E51100CF5A77 /* ViewInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 961013592003E51100CF5A77 /* ViewInput.swift */; };
+		9610135C2003E53500CF5A77 /* PresenterInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9610135B2003E53500CF5A77 /* PresenterInput.swift */; };
+		9610135E2003E55400CF5A77 /* PresenterOutPut.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9610135D2003E55400CF5A77 /* PresenterOutPut.swift */; };
+		961013612003EB0B00CF5A77 /* Presenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 961013602003EB0B00CF5A77 /* Presenter.swift */; };
+		961013632003EEBF00CF5A77 /* CreateRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 961013622003EEBF00CF5A77 /* CreateRequest.swift */; };
+		961013662003F41A00CF5A77 /* DependencyInjector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 961013652003F41A00CF5A77 /* DependencyInjector.swift */; };
+		9618F2551FD41A9900A0AE10 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9618F2541FD41A9900A0AE10 /* AppDelegate.swift */; };
+		9618F2571FD41A9900A0AE10 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9618F2561FD41A9900A0AE10 /* ViewController.swift */; };
+		9618F25A1FD41A9900A0AE10 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9618F2581FD41A9900A0AE10 /* Main.storyboard */; };
+		9618F25C1FD41A9900A0AE10 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9618F25B1FD41A9900A0AE10 /* Assets.xcassets */; };
+		9618F25F1FD41A9900A0AE10 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9618F25D1FD41A9900A0AE10 /* LaunchScreen.storyboard */; };
+		9618F26A1FD41A9900A0AE10 /* fevroniaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9618F2691FD41A9900A0AE10 /* fevroniaTests.swift */; };
+		9618F2751FD41A9900A0AE10 /* fevroniaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9618F2741FD41A9900A0AE10 /* fevroniaUITests.swift */; };
+		9618F2851FD4223900A0AE10 /* API_WRAPPER.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9618F2841FD4223900A0AE10 /* API_WRAPPER.swift */; };
+		9618F2881FD4226100A0AE10 /* FVConst.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9618F2871FD4226100A0AE10 /* FVConst.swift */; };
+		9618F28B1FD42BB600A0AE10 /* FVHopesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9618F28A1FD42BB600A0AE10 /* FVHopesViewController.swift */; };
+		9618F28E1FD4332600A0AE10 /* FVGirlView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9618F28D1FD4332600A0AE10 /* FVGirlView.xib */; };
+		9618F2901FD4379F00A0AE10 /* FBGirlView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9618F28F1FD4379F00A0AE10 /* FBGirlView.swift */; };
+		9618F2931FD4388300A0AE10 /* FBGirl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9618F2921FD4388300A0AE10 /* FBGirl.swift */; };
+		9618F2951FD4396C00A0AE10 /* FVGirlFabrique.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9618F2941FD4396C00A0AE10 /* FVGirlFabrique.swift */; };
+		96A064CC1FDD45CF007F6815 /* DataLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96A064CB1FDD45CF007F6815 /* DataLayer.swift */; };
+		96A064CF1FDD4FE8007F6815 /* FVGirlViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96A064CD1FDD4FE8007F6815 /* FVGirlViewCell.swift */; };
+		96A064D01FDD4FE8007F6815 /* FVGirlViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 96A064CE1FDD4FE8007F6815 /* FVGirlViewCell.xib */; };
+		96A8B4B61FF11888002C85B6 /* SwipableViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96A8B4B51FF11888002C85B6 /* SwipableViews.swift */; };
+		F6E4D83483599F527B9E9CDD /* Pods_fevronia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F544837977F760C34BD8CCD /* Pods_fevronia.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9618F2661FD41A9900A0AE10 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9618F2491FD41A9900A0AE10 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9618F2501FD41A9900A0AE10;
+			remoteInfo = fevronia;
+		};
+		9618F2711FD41A9900A0AE10 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9618F2491FD41A9900A0AE10 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9618F2501FD41A9900A0AE10;
+			remoteInfo = fevronia;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		4F544837977F760C34BD8CCD /* Pods_fevronia.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_fevronia.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		961013592003E51100CF5A77 /* ViewInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewInput.swift; sourceTree = "<group>"; };
+		9610135B2003E53500CF5A77 /* PresenterInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresenterInput.swift; sourceTree = "<group>"; };
+		9610135D2003E55400CF5A77 /* PresenterOutPut.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresenterOutPut.swift; sourceTree = "<group>"; };
+		961013602003EB0B00CF5A77 /* Presenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Presenter.swift; sourceTree = "<group>"; };
+		961013622003EEBF00CF5A77 /* CreateRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateRequest.swift; sourceTree = "<group>"; };
+		961013652003F41A00CF5A77 /* DependencyInjector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DependencyInjector.swift; sourceTree = "<group>"; };
+		9618F2511FD41A9900A0AE10 /* fevronia.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = fevronia.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9618F2541FD41A9900A0AE10 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		9618F2561FD41A9900A0AE10 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		9618F2591FD41A9900A0AE10 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		9618F25B1FD41A9900A0AE10 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9618F25E1FD41A9900A0AE10 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		9618F2601FD41A9900A0AE10 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9618F2651FD41A9900A0AE10 /* fevroniaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = fevroniaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9618F2691FD41A9900A0AE10 /* fevroniaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = fevroniaTests.swift; sourceTree = "<group>"; };
+		9618F26B1FD41A9900A0AE10 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9618F2701FD41A9900A0AE10 /* fevroniaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = fevroniaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9618F2741FD41A9900A0AE10 /* fevroniaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = fevroniaUITests.swift; sourceTree = "<group>"; };
+		9618F2761FD41A9900A0AE10 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9618F2841FD4223900A0AE10 /* API_WRAPPER.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API_WRAPPER.swift; sourceTree = "<group>"; };
+		9618F2871FD4226100A0AE10 /* FVConst.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FVConst.swift; sourceTree = "<group>"; };
+		9618F28A1FD42BB600A0AE10 /* FVHopesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FVHopesViewController.swift; sourceTree = "<group>"; };
+		9618F28D1FD4332600A0AE10 /* FVGirlView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FVGirlView.xib; sourceTree = "<group>"; };
+		9618F28F1FD4379F00A0AE10 /* FBGirlView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FBGirlView.swift; sourceTree = "<group>"; };
+		9618F2921FD4388300A0AE10 /* FBGirl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FBGirl.swift; sourceTree = "<group>"; };
+		9618F2941FD4396C00A0AE10 /* FVGirlFabrique.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FVGirlFabrique.swift; sourceTree = "<group>"; };
+		96A064CB1FDD45CF007F6815 /* DataLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataLayer.swift; sourceTree = "<group>"; };
+		96A064CD1FDD4FE8007F6815 /* FVGirlViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FVGirlViewCell.swift; sourceTree = "<group>"; };
+		96A064CE1FDD4FE8007F6815 /* FVGirlViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FVGirlViewCell.xib; sourceTree = "<group>"; };
+		96A8B4B51FF11888002C85B6 /* SwipableViews.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwipableViews.swift; sourceTree = "<group>"; };
+		B2C9B0EF80E80703E24E447F /* Pods-fevronia.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-fevronia.release.xcconfig"; path = "Pods/Target Support Files/Pods-fevronia/Pods-fevronia.release.xcconfig"; sourceTree = "<group>"; };
+		BFE93A483B1ED623D582FCB5 /* Pods-fevronia.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-fevronia.debug.xcconfig"; path = "Pods/Target Support Files/Pods-fevronia/Pods-fevronia.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9618F24E1FD41A9900A0AE10 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F6E4D83483599F527B9E9CDD /* Pods_fevronia.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9618F2621FD41A9900A0AE10 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9618F26D1FD41A9900A0AE10 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		961013582003E4DF00CF5A77 /* interfaces */ = {
+			isa = PBXGroup;
+			children = (
+				961013592003E51100CF5A77 /* ViewInput.swift */,
+				9610135B2003E53500CF5A77 /* PresenterInput.swift */,
+				9610135D2003E55400CF5A77 /* PresenterOutPut.swift */,
+			);
+			path = interfaces;
+			sourceTree = "<group>";
+		};
+		9610135F2003EAE900CF5A77 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				961013602003EB0B00CF5A77 /* Presenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		961013642003F3F900CF5A77 /* DependencyInjector */ = {
+			isa = PBXGroup;
+			children = (
+				961013652003F41A00CF5A77 /* DependencyInjector.swift */,
+			);
+			path = DependencyInjector;
+			sourceTree = "<group>";
+		};
+		9618F2481FD41A9900A0AE10 = {
+			isa = PBXGroup;
+			children = (
+				9618F2531FD41A9900A0AE10 /* fevronia */,
+				9618F2681FD41A9900A0AE10 /* fevroniaTests */,
+				9618F2731FD41A9900A0AE10 /* fevroniaUITests */,
+				9618F2521FD41A9900A0AE10 /* Products */,
+				D9C26E9AAB9D46E827EF5C32 /* Pods */,
+				FBB36135DF1C22E6BD3046DC /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		9618F2521FD41A9900A0AE10 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9618F2511FD41A9900A0AE10 /* fevronia.app */,
+				9618F2651FD41A9900A0AE10 /* fevroniaTests.xctest */,
+				9618F2701FD41A9900A0AE10 /* fevroniaUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9618F2531FD41A9900A0AE10 /* fevronia */ = {
+			isa = PBXGroup;
+			children = (
+				961013642003F3F900CF5A77 /* DependencyInjector */,
+				9610135F2003EAE900CF5A77 /* Presenter */,
+				961013582003E4DF00CF5A77 /* interfaces */,
+				9618F2911FD4386900A0AE10 /* data model */,
+				9618F2601FD41A9900A0AE10 /* Info.plist */,
+				9618F28C1FD432F300A0AE10 /* CustomViews */,
+				9618F2891FD42B8900A0AE10 /* ViewControllers */,
+				9618F2861FD4224D00A0AE10 /* Const */,
+				9618F2831FD4222100A0AE10 /* server */,
+				9618F2821FD4220C00A0AE10 /* System */,
+			);
+			path = fevronia;
+			sourceTree = "<group>";
+		};
+		9618F2681FD41A9900A0AE10 /* fevroniaTests */ = {
+			isa = PBXGroup;
+			children = (
+				9618F2691FD41A9900A0AE10 /* fevroniaTests.swift */,
+				9618F26B1FD41A9900A0AE10 /* Info.plist */,
+			);
+			path = fevroniaTests;
+			sourceTree = "<group>";
+		};
+		9618F2731FD41A9900A0AE10 /* fevroniaUITests */ = {
+			isa = PBXGroup;
+			children = (
+				9618F2741FD41A9900A0AE10 /* fevroniaUITests.swift */,
+				9618F2761FD41A9900A0AE10 /* Info.plist */,
+			);
+			path = fevroniaUITests;
+			sourceTree = "<group>";
+		};
+		9618F2821FD4220C00A0AE10 /* System */ = {
+			isa = PBXGroup;
+			children = (
+				9618F2541FD41A9900A0AE10 /* AppDelegate.swift */,
+				9618F2561FD41A9900A0AE10 /* ViewController.swift */,
+				9618F2581FD41A9900A0AE10 /* Main.storyboard */,
+				9618F25B1FD41A9900A0AE10 /* Assets.xcassets */,
+				9618F25D1FD41A9900A0AE10 /* LaunchScreen.storyboard */,
+			);
+			path = System;
+			sourceTree = "<group>";
+		};
+		9618F2831FD4222100A0AE10 /* server */ = {
+			isa = PBXGroup;
+			children = (
+				9618F2841FD4223900A0AE10 /* API_WRAPPER.swift */,
+				96A064CB1FDD45CF007F6815 /* DataLayer.swift */,
+				961013622003EEBF00CF5A77 /* CreateRequest.swift */,
+			);
+			path = server;
+			sourceTree = "<group>";
+		};
+		9618F2861FD4224D00A0AE10 /* Const */ = {
+			isa = PBXGroup;
+			children = (
+				9618F2871FD4226100A0AE10 /* FVConst.swift */,
+			);
+			path = Const;
+			sourceTree = "<group>";
+		};
+		9618F2891FD42B8900A0AE10 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				96A8B4B51FF11888002C85B6 /* SwipableViews.swift */,
+				9618F28A1FD42BB600A0AE10 /* FVHopesViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		9618F28C1FD432F300A0AE10 /* CustomViews */ = {
+			isa = PBXGroup;
+			children = (
+				9618F28D1FD4332600A0AE10 /* FVGirlView.xib */,
+				9618F28F1FD4379F00A0AE10 /* FBGirlView.swift */,
+				96A064CD1FDD4FE8007F6815 /* FVGirlViewCell.swift */,
+				96A064CE1FDD4FE8007F6815 /* FVGirlViewCell.xib */,
+			);
+			path = CustomViews;
+			sourceTree = "<group>";
+		};
+		9618F2911FD4386900A0AE10 /* data model */ = {
+			isa = PBXGroup;
+			children = (
+				9618F2921FD4388300A0AE10 /* FBGirl.swift */,
+				9618F2941FD4396C00A0AE10 /* FVGirlFabrique.swift */,
+			);
+			path = "data model";
+			sourceTree = "<group>";
+		};
+		D9C26E9AAB9D46E827EF5C32 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BFE93A483B1ED623D582FCB5 /* Pods-fevronia.debug.xcconfig */,
+				B2C9B0EF80E80703E24E447F /* Pods-fevronia.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		FBB36135DF1C22E6BD3046DC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4F544837977F760C34BD8CCD /* Pods_fevronia.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9618F2501FD41A9900A0AE10 /* fevronia */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9618F2791FD41A9900A0AE10 /* Build configuration list for PBXNativeTarget "fevronia" */;
+			buildPhases = (
+				6676EF4A1C903BBF910337A4 /* [CP] Check Pods Manifest.lock */,
+				9618F24D1FD41A9900A0AE10 /* Sources */,
+				9618F24E1FD41A9900A0AE10 /* Frameworks */,
+				9618F24F1FD41A9900A0AE10 /* Resources */,
+				F481AA91F0CEDEA655F2B0AD /* [CP] Embed Pods Frameworks */,
+				949835626EE62E20AB2F1DB6 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = fevronia;
+			productName = fevronia;
+			productReference = 9618F2511FD41A9900A0AE10 /* fevronia.app */;
+			productType = "com.apple.product-type.application";
+		};
+		9618F2641FD41A9900A0AE10 /* fevroniaTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9618F27C1FD41A9900A0AE10 /* Build configuration list for PBXNativeTarget "fevroniaTests" */;
+			buildPhases = (
+				9618F2611FD41A9900A0AE10 /* Sources */,
+				9618F2621FD41A9900A0AE10 /* Frameworks */,
+				9618F2631FD41A9900A0AE10 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9618F2671FD41A9900A0AE10 /* PBXTargetDependency */,
+			);
+			name = fevroniaTests;
+			productName = fevroniaTests;
+			productReference = 9618F2651FD41A9900A0AE10 /* fevroniaTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		9618F26F1FD41A9900A0AE10 /* fevroniaUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9618F27F1FD41A9900A0AE10 /* Build configuration list for PBXNativeTarget "fevroniaUITests" */;
+			buildPhases = (
+				9618F26C1FD41A9900A0AE10 /* Sources */,
+				9618F26D1FD41A9900A0AE10 /* Frameworks */,
+				9618F26E1FD41A9900A0AE10 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9618F2721FD41A9900A0AE10 /* PBXTargetDependency */,
+			);
+			name = fevroniaUITests;
+			productName = fevroniaUITests;
+			productReference = 9618F2701FD41A9900A0AE10 /* fevroniaUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9618F2491FD41A9900A0AE10 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0910;
+				LastUpgradeCheck = 0910;
+				ORGANIZATIONNAME = "Александр Чернов";
+				TargetAttributes = {
+					9618F2501FD41A9900A0AE10 = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+					};
+					9618F2641FD41A9900A0AE10 = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 9618F2501FD41A9900A0AE10;
+					};
+					9618F26F1FD41A9900A0AE10 = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 9618F2501FD41A9900A0AE10;
+					};
+				};
+			};
+			buildConfigurationList = 9618F24C1FD41A9900A0AE10 /* Build configuration list for PBXProject "fevronia" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9618F2481FD41A9900A0AE10;
+			productRefGroup = 9618F2521FD41A9900A0AE10 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9618F2501FD41A9900A0AE10 /* fevronia */,
+				9618F2641FD41A9900A0AE10 /* fevroniaTests */,
+				9618F26F1FD41A9900A0AE10 /* fevroniaUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9618F24F1FD41A9900A0AE10 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				96A064D01FDD4FE8007F6815 /* FVGirlViewCell.xib in Resources */,
+				9618F28E1FD4332600A0AE10 /* FVGirlView.xib in Resources */,
+				9618F25F1FD41A9900A0AE10 /* LaunchScreen.storyboard in Resources */,
+				9618F25C1FD41A9900A0AE10 /* Assets.xcassets in Resources */,
+				9618F25A1FD41A9900A0AE10 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9618F2631FD41A9900A0AE10 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9618F26E1FD41A9900A0AE10 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6676EF4A1C903BBF910337A4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-fevronia-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		949835626EE62E20AB2F1DB6 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-fevronia/Pods-fevronia-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F481AA91F0CEDEA655F2B0AD /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-fevronia/Pods-fevronia-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+				"${BUILT_PRODUCTS_DIR}/libwebp/libwebp.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/libwebp.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-fevronia/Pods-fevronia-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9618F24D1FD41A9900A0AE10 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9618F2951FD4396C00A0AE10 /* FVGirlFabrique.swift in Sources */,
+				9618F2571FD41A9900A0AE10 /* ViewController.swift in Sources */,
+				9618F28B1FD42BB600A0AE10 /* FVHopesViewController.swift in Sources */,
+				9618F2901FD4379F00A0AE10 /* FBGirlView.swift in Sources */,
+				96A064CF1FDD4FE8007F6815 /* FVGirlViewCell.swift in Sources */,
+				96A064CC1FDD45CF007F6815 /* DataLayer.swift in Sources */,
+				96A8B4B61FF11888002C85B6 /* SwipableViews.swift in Sources */,
+				9618F2851FD4223900A0AE10 /* API_WRAPPER.swift in Sources */,
+				9618F2551FD41A9900A0AE10 /* AppDelegate.swift in Sources */,
+				961013612003EB0B00CF5A77 /* Presenter.swift in Sources */,
+				9610135E2003E55400CF5A77 /* PresenterOutPut.swift in Sources */,
+				961013632003EEBF00CF5A77 /* CreateRequest.swift in Sources */,
+				9610135C2003E53500CF5A77 /* PresenterInput.swift in Sources */,
+				9610135A2003E51100CF5A77 /* ViewInput.swift in Sources */,
+				9618F2931FD4388300A0AE10 /* FBGirl.swift in Sources */,
+				961013662003F41A00CF5A77 /* DependencyInjector.swift in Sources */,
+				9618F2881FD4226100A0AE10 /* FVConst.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9618F2611FD41A9900A0AE10 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9618F26A1FD41A9900A0AE10 /* fevroniaTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9618F26C1FD41A9900A0AE10 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9618F2751FD41A9900A0AE10 /* fevroniaUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9618F2671FD41A9900A0AE10 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9618F2501FD41A9900A0AE10 /* fevronia */;
+			targetProxy = 9618F2661FD41A9900A0AE10 /* PBXContainerItemProxy */;
+		};
+		9618F2721FD41A9900A0AE10 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9618F2501FD41A9900A0AE10 /* fevronia */;
+			targetProxy = 9618F2711FD41A9900A0AE10 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		9618F2581FD41A9900A0AE10 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9618F2591FD41A9900A0AE10 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		9618F25D1FD41A9900A0AE10 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9618F25E1FD41A9900A0AE10 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9618F2771FD41A9900A0AE10 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		9618F2781FD41A9900A0AE10 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9618F27A1FD41A9900A0AE10 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BFE93A483B1ED623D582FCB5 /* Pods-fevronia.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8BTLC392EH;
+				INFOPLIST_FILE = fevronia/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Beet.Lab.fevronia;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9618F27B1FD41A9900A0AE10 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B2C9B0EF80E80703E24E447F /* Pods-fevronia.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8BTLC392EH;
+				INFOPLIST_FILE = fevronia/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Beet.Lab.fevronia;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		9618F27D1FD41A9900A0AE10 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8BTLC392EH;
+				INFOPLIST_FILE = fevroniaTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Beet.Lab.fevroniaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/fevronia.app/fevronia";
+			};
+			name = Debug;
+		};
+		9618F27E1FD41A9900A0AE10 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8BTLC392EH;
+				INFOPLIST_FILE = fevroniaTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Beet.Lab.fevroniaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/fevronia.app/fevronia";
+			};
+			name = Release;
+		};
+		9618F2801FD41A9900A0AE10 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8BTLC392EH;
+				INFOPLIST_FILE = fevroniaUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Beet.Lab.fevroniaUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = fevronia;
+			};
+			name = Debug;
+		};
+		9618F2811FD41A9900A0AE10 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8BTLC392EH;
+				INFOPLIST_FILE = fevroniaUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Beet.Lab.fevroniaUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = fevronia;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9618F24C1FD41A9900A0AE10 /* Build configuration list for PBXProject "fevronia" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9618F2771FD41A9900A0AE10 /* Debug */,
+				9618F2781FD41A9900A0AE10 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9618F2791FD41A9900A0AE10 /* Build configuration list for PBXNativeTarget "fevronia" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9618F27A1FD41A9900A0AE10 /* Debug */,
+				9618F27B1FD41A9900A0AE10 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9618F27C1FD41A9900A0AE10 /* Build configuration list for PBXNativeTarget "fevroniaTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9618F27D1FD41A9900A0AE10 /* Debug */,
+				9618F27E1FD41A9900A0AE10 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9618F27F1FD41A9900A0AE10 /* Build configuration list for PBXNativeTarget "fevroniaUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9618F2801FD41A9900A0AE10 /* Debug */,
+				9618F2811FD41A9900A0AE10 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9618F2491FD41A9900A0AE10 /* Project object */;
+}

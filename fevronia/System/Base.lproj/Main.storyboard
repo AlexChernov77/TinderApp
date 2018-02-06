@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="GMG-RG-WcG">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Hopes View Controller-->
+        <scene sceneID="fo3-Q8-OWY">
+            <objects>
+                <viewController id="GMG-RG-WcG" customClass="FVHopesViewController" customModule="fevronia" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="sbC-Fs-KxF">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NKW-SJ-0Ee" customClass="SwipableViews" customModule="fevronia" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="20" width="320" height="468"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="150" translatesAutoresizingMaskIntoConstraints="NO" id="kj4-6W-oXo">
+                                <rect key="frame" x="50" y="489" width="220" height="51"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UJy-yr-qXY">
+                                        <rect key="frame" x="0.0" y="0.0" width="34" height="51"/>
+                                        <fontDescription key="fontDescription" type="system" weight="light" pointSize="30"/>
+                                        <state key="normal" title="❌"/>
+                                        <connections>
+                                            <action selector="disLikeButtonPressed" destination="GMG-RG-WcG" eventType="touchUpInside" id="cd9-r8-ZWh"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hqp-GW-U4H">
+                                        <rect key="frame" x="184" y="0.0" width="36" height="51"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                        <state key="normal" title="❤️"/>
+                                        <connections>
+                                            <action selector="likeButtonPressed" destination="GMG-RG-WcG" eventType="touchUpInside" id="gNu-Qk-LSw"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="NKW-SJ-0Ee" firstAttribute="top" secondItem="Ylq-ED-jV8" secondAttribute="top" id="3FH-Wh-9ET"/>
+                            <constraint firstItem="Ylq-ED-jV8" firstAttribute="bottom" secondItem="NKW-SJ-0Ee" secondAttribute="bottom" constant="80" id="63i-J0-uWh"/>
+                            <constraint firstAttribute="trailing" secondItem="NKW-SJ-0Ee" secondAttribute="trailing" id="8gb-jl-eM0"/>
+                            <constraint firstItem="kj4-6W-oXo" firstAttribute="leading" secondItem="Ylq-ED-jV8" secondAttribute="leading" constant="50" id="9VM-6J-glT"/>
+                            <constraint firstItem="Ylq-ED-jV8" firstAttribute="bottom" secondItem="kj4-6W-oXo" secondAttribute="bottom" constant="28" id="h9I-13-cA7"/>
+                            <constraint firstItem="NKW-SJ-0Ee" firstAttribute="leading" secondItem="sbC-Fs-KxF" secondAttribute="leading" id="r7n-Ih-WpD"/>
+                            <constraint firstItem="Ylq-ED-jV8" firstAttribute="trailing" secondItem="kj4-6W-oXo" secondAttribute="trailing" constant="50" id="t7p-YV-Kfb"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Ylq-ED-jV8"/>
+                    </view>
+                    <connections>
+                        <outlet property="containerView" destination="NKW-SJ-0Ee" id="zOg-GW-6Ul"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7Db-nr-X4r" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-75" y="23.239436619718312"/>
+        </scene>
+    </scenes>
+</document>
